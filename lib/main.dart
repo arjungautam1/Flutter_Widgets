@@ -13,7 +13,6 @@ class ContainerWidget extends StatelessWidget {
           title: Text('Container Widget'),
         ),
         body: ContainerW(),
-
       ),
     );
   }
