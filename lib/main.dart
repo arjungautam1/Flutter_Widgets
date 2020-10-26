@@ -1,24 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/widgets/container.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(ContainerWidget());
 
-class MyApp extends StatelessWidget {
+class ContainerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Container example"),
+          title: Text('Container Widget'),
         ),
-        body: Center(
-          child: Container(
-            margin: const EdgeInsets.all(10.0),
-            color: Colors.amber[600],
-            width: 48.0,
-            height: 48.0,
-          ),
-        )
-        ),
-      );
+        body: ContainerW(),
+
+      ),
+    );
   }
 }
